@@ -6,12 +6,12 @@ bool isPrime(int num) {
     if (num <= 1) {
         return false;
     }
-  for (int i = 2; i <= sqrt(num); ++i) {
-   if (num % i == 0) {
+    for (int i = 2; i <= sqrt(num); ++i) {
+        if (num % i == 0) {
             return false;
         }
     }
-        }
+    return true; 
 }
 
 int main() {
@@ -26,8 +26,7 @@ int main() {
         }
     }
 
-    cout << "There are " << primeCount << " prime numbers between 2 and " << userInput << std::endl;
+    cout << "There are " << primeCount << " prime numbers between 2 and " << userInput << endl;
 
     return 0;
 }
-
